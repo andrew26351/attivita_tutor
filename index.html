@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: centrer;        
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script src="p5.min.js"></script>
+    <script>
+        let x = 0
+        let y = 0
+    
+
+        let dimOcchio = 60
+        let dimPupilla = 35
+
+        let offset = dimOcchio + dimPupilla / 2
+
+        function setup(){
+            createCanvas(500, 500)
+            angleMode(DEGREES)
+        }
+
+        // line(x_start, x_end, y_start, y_end)
+        function draw(){
+            background("red")
+            strokeWeight(4)
+            
+            fill("yellow")
+            circle(250, 250, 400)
+            fill("white")
+            circle(330, 180, 60)
+            circle(170, 180, 60)
+            fill("black")
+            circle(330, 180, 35)
+            circle(170, 180, 35)
+            noFill()
+            arc(250, 280, 150, 150, 0, 180)
+            //line(0, 0, x, y)
+            
+            //circle(x ,y, 50)
+
+            //x = x + 1
+            //y = y + 1
+        }
+    </script>
+</body>
+</html> 
